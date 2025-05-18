@@ -3,7 +3,7 @@ import axios from 'axios';
 import { SmartphoneInput, SmartphoneEvaluation } from './types/smartphone';
 
 // Base URL for the FastAPI backend
-const API_BASE_URL = 'phone-score-api-production.up.railway.app';
+const API_BASE_URL = 'https://phone-score-api-production.up.railway.app';
 
 // Function to evaluate a smartphone using the FastAPI backend
 export async function evaluateSmartphone(
