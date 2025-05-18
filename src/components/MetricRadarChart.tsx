@@ -4,7 +4,6 @@ import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } fro
 interface MetricsProps {
   gaming_potential: number;
   battery_performance: number;
-  cost_effectiveness: number;
   photography: number;
   display_quality: number;
 }
@@ -18,7 +17,6 @@ const MetricRadarChart: React.FC<MetricRadarChartProps> = ({ metrics }) => {
   const data = [
     { subject: "Gaming", value: metrics.gaming_potential },
     { subject: "Batería", value: metrics.battery_performance },
-    { subject: "Costo-Beneficio", value: metrics.cost_effectiveness },
     { subject: "Fotografía", value: metrics.photography },
     { subject: "Pantalla", value: metrics.display_quality },
   ];

@@ -61,7 +61,6 @@ function generateLocalEvaluation(input: SmartphoneInput): SmartphoneEvaluation {
   const overallScore = Math.round(
     (metrics.gaming_potential * 0.2) +
     (metrics.battery_performance * 0.2) +
-    (metrics.cost_effectiveness * 0.2) +
     (metrics.photography * 0.2) +
     (metrics.display_quality * 0.2)
   );
@@ -242,15 +241,10 @@ function generateMetrics(input: SmartphoneInput) {
   // Calculate gaming score
   const gamingPotential = Math.round((ramScore * 0.6) + (batteryScore * 0.2) + (storageScore * 0.2));
   
-  // Calculate cost effectiveness score - inversely proportional to high specs
-  const costEffectiveness = Math.round(
-    (100 - (ramScore + storageScore) / 2) * 0.7 + 50
-  );
   
   return {
     gaming_potential: gamingPotential,
     battery_performance: Math.round(batteryScore),
-    cost_effectiveness: costEffectiveness,
     photography: Math.round(cameraScore),
     display_quality: Math.round(displayScore)
   };

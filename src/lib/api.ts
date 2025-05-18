@@ -114,9 +114,7 @@ async function localEvaluateSmartphone(
   // Generate specific metrics
   const gaming_potential = Math.round((ramScore * 0.6) + (batteryScore * 0.2) + (storageScore * 0.2));
   const battery_performance = Math.round(batteryScore);
-  const cost_effectiveness = Math.round(
-    (100 - (ramScore + storageScore) / 2) * 0.7 + 50
-  );
+
   const photography = Math.round(cameraScore);
   const display_quality = Math.round(displayScore);
 
@@ -130,7 +128,6 @@ async function localEvaluateSmartphone(
     metrics: {
       gaming_potential,
       battery_performance,
-      cost_effectiveness,
       photography,
       display_quality,
     },

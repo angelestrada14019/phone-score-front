@@ -120,7 +120,6 @@ const SmartphoneCard: React.FC<SmartphoneCardProps> = ({ data, isNew = false }) 
             <div className="flex flex-wrap gap-2 mb-4">
               <MetricBadge label="Gaming" value={data.metrics.gaming_potential} />
               <MetricBadge label="Batería" value={data.metrics.battery_performance} />
-              <MetricBadge label="Costo-Beneficio" value={data.metrics.cost_effectiveness} />
               <MetricBadge label="Fotografía" value={data.metrics.photography} />
               <MetricBadge label="Pantalla" value={data.metrics.display_quality} />
             </div>

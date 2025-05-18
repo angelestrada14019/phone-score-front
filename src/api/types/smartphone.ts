@@ -20,7 +20,6 @@ export interface SmartphoneEvaluation extends SmartphoneInput {
   metrics: {
     gaming_potential: number; // 0-100
     battery_performance: number; // 0-100
-    cost_effectiveness: number; // 0-100
     photography: number; // 0-100
     display_quality: number; // 0-100
   };
