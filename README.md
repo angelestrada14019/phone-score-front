@@ -28,3 +28,11 @@ Este proyecto está construido con:
 ## ¿Cómo puedo desplegar este proyecto?
 
 Este proyecto se puede desplegar fácilmente en Vercel. Vercel proporciona una plataforma sin interrupciones para alojar aplicaciones front-end. Para desplegar, simplemente conecta tu repositorio Git (GitHub, GitLab o Bitbucket) a tu cuenta de Vercel. Vercel detectará automáticamente la configuración del proyecto (Vite con React y TypeScript) y configurará el proceso de compilación y despliegue. Las posteriores subidas a tu repositorio conectado activarán despliegues automáticos.
+
+## Contribuciones
+
+Este proyecto fue posible gracias a las contribuciones de:
+
+*   Daniela Alarcon
+*   Milmax Duque
+*   Angel Estrada
