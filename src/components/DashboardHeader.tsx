@@ -10,7 +10,7 @@ const DashboardHeader: React.FC = () => {
           <ChartBar className="h-6 w-6 text-white" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold">Smart Analytics</h1>
+          <h1 className="text-2xl font-bold">TechMinds</h1>
           <p className="text-muted-foreground">Evaluador de smartphones basado en ML</p>
         </div>
       </div>
