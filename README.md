@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# Herramienta de Evaluación de Smartphones
 
-## Project info
+Esta aplicación es una herramienta para evaluar smartphones basándose en diversas métricas. Permite a los usuarios ingresar datos sobre diferentes smartphones y visualizar su rendimiento utilizando un gráfico de radar. Esto ayuda a los usuarios a comparar diferentes teléfonos y tomar decisiones informadas.
 
-**URL**: https://lovable.dev/projects/a90e6c53-61d8-4cfe-963a-d7b1e94e2cf8
+## Descripción de la Aplicación
 
-## How can I edit this code?
+Esta aplicación web proporciona una interfaz fácil de usar para evaluar y comparar smartphones. Los usuarios pueden ingresar varias especificaciones técnicas y métricas de rendimiento para diferentes dispositivos. La aplicación luego genera una visualización en un gráfico de radar, permitiendo una comparación clara e intuitiva de cómo cada smartphone se desempeña según los criterios elegidos. Esta herramienta está diseñada para ayudar a consumidores, revisores y entusiastas a tomar decisiones basadas en datos al elegir un nuevo smartphone.
 
-There are several ways of editing your application.
+## Características
 
-**Use Lovable**
+*   **Ingreso de Datos:** Ingresa fácilmente las especificaciones y métricas de evaluación del smartphone.
+*   **Evaluación Basada en Métricas:** Define y puntúa smartphones basándose en varios indicadores de rendimiento.
+*   **Visualización en Gráfico de Radar:** Visualiza y compara múltiples smartphones en un solo gráfico de radar para un análisis intuitivo.
+*   **Interfaz Fácil de Usar:** Diseño limpio y responsivo construido con tecnologías web modernas.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a90e6c53-61d8-4cfe-963a-d7b1e94e2cf8) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+## ¿Qué tecnologías se utilizan en este proyecto?
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+Este proyecto está construido con:
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
+* API para obtener información de los smartphones (implementación pendiente).
 
-## How can I deploy this project?
+## ¿Cómo puedo desplegar este proyecto?
 
-Simply open [Lovable](https://lovable.dev/projects/a90e6c53-61d8-4cfe-963a-d7b1e94e2cf8) and click on Share -> Publish.
+Este proyecto se puede desplegar fácilmente en Vercel. Vercel proporciona una plataforma sin interrupciones para alojar aplicaciones front-end. Para desplegar, simplemente conecta tu repositorio Git (GitHub, GitLab o Bitbucket) a tu cuenta de Vercel. Vercel detectará automáticamente la configuración del proyecto (Vite con React y TypeScript) y configurará el proceso de compilación y despliegue. Las posteriores subidas a tu repositorio conectado activarán despliegues automáticos.
 
-## Can I connect a custom domain to my Lovable project?
+## Contribuciones
 
-Yes, you can!
+Este proyecto fue posible gracias a las contribuciones de:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*   Daniela Alarcon
+*   Milmax Duque
+*   Angel Estrada
