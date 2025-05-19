@@ -282,7 +282,7 @@ export const sampleSmartphones: SmartphoneInput[] = [
   {
     internal_storage: 64,
     storage_ram: 8,
-    expandable_storage: null,
+    expandable_storage: "NA",
     primary_camera: "50MP + 10MP + 12MP",
     display: "LCDHD",
     network: "4G, 3G, 2G",
