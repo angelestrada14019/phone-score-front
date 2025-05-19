@@ -96,20 +96,20 @@ async function localEvaluateSmartphone(
   }
 
   // Calculate price estimation
-  const base_price = (
-    input.internal_storage * 0.5 + 
-    input.storage_ram * 100 + 
-    mpSum * 3 + 
-    (input.display.toLowerCase().includes("amoled") ? 300 : 
-     input.display.toLowerCase().includes("oled") ? 250 : 
-     input.display.toLowerCase().includes("lcd") ? 150 : 100) + 
-    (input.network.toLowerCase().includes("5g") ? 200 : 100) + 
-    input.battery / 20
-  );
+//   const base_price = (
+//     input.internal_storage * 0.5 + 
+//     input.storage_ram * 100 + 
+//     mpSum * 3 + 
+//     (input.display.toLowerCase().includes("amoled") ? 300 : 
+//      input.display.toLowerCase().includes("oled") ? 250 : 
+//      input.display.toLowerCase().includes("lcd") ? 150 : 100) + 
+//     (input.network.toLowerCase().includes("5g") ? 200 : 100) + 
+//     input.battery / 20
+//   );
   
-  const min_price = Math.round(base_price * 0.9);
-  const max_price = Math.round(base_price * 1.1);
-  const price_range = `$${min_price} - $${max_price}`;
+//   const min_price = Math.round(base_price * 0.9);
+//   const max_price = Math.round(base_price * 1.1);
+//   const price_range = `$${min_price} - $${max_price}`;
 
   // Generate specific metrics
   const gaming_potential = Math.round((ramScore * 0.6) + (batteryScore * 0.2) + (storageScore * 0.2));
@@ -123,7 +123,7 @@ async function localEvaluateSmartphone(
     ...input,
     overall_score,
     performance_category,
-    price_range,
+    // price_range,
     user_recommendation,
     metrics: {
       gaming_potential,

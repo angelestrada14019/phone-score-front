@@ -71,12 +71,12 @@ const SmartphoneCard: React.FC<SmartphoneCardProps> = ({ data, isNew = false }) 
           </div>
           
           {/* Price Range */}
-          {data.price_range && (
+          {/* {data.price_range && (
             <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 p-2 rounded-md">
               <DollarSign className="h-4 w-4 text-green-600" />
               <span className="text-sm font-medium">Rango de Precio Estimado: {data.price_range}</span>
             </div>
-          )}
+          )} */}
           
           {/* Key Specifications */}
           <div className="grid grid-cols-2 gap-3">

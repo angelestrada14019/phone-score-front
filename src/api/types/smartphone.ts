@@ -15,7 +15,7 @@ export interface SmartphoneEvaluation extends SmartphoneInput {
   id: string;
   overall_score: number; // 0-100
   performance_category: "HIGH" | "MID" | "LOW";
-  price_range: string; // e.g. "$300 - $400"
+//   price_range: string; // e.g. "$300 - $400"
   user_recommendation: string;
   metrics: {
     gaming_potential: number; // 0-100

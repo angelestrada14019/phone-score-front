@@ -52,7 +52,7 @@ function generateLocalEvaluation(input: SmartphoneInput): SmartphoneEvaluation {
   
   // Simulate ML model evaluation for price range
   // This simulates the my_model_price model from sklearn
-  const priceRange = simulatePriceModel(input);
+//   const priceRange = simulatePriceModel(input);
   
   // Generate metrics based on the input
   const metrics = generateMetrics(input);
@@ -73,7 +73,7 @@ function generateLocalEvaluation(input: SmartphoneInput): SmartphoneEvaluation {
     ...input,
     overall_score: overallScore,
     performance_category: performanceCategory,
-    price_range: priceRange,
+    // price_range: priceRange,
     user_recommendation: userRecommendation,
     metrics
   };
@@ -146,55 +146,55 @@ function simulateGamaModel(input: SmartphoneInput): "HIGH" | "MID" | "LOW" {
   }
 }
 
-// Function to simulate the my_model_price model from sklearn
-function simulatePriceModel(input: SmartphoneInput): string {
-  // Calculate a base price factor based on specs
-  const storageFactor = input.internal_storage * 0.5;
-  const ramFactor = input.storage_ram * 100;
+// // Function to simulate the my_model_price model from sklearn
+// function simulatePriceModel(input: SmartphoneInput): string {
+//   // Calculate a base price factor based on specs
+//   const storageFactor = input.internal_storage * 0.5;
+//   const ramFactor = input.storage_ram * 100;
   
-  // Camera factor
-  const cameras = input.primary_camera.split("+").map(c => {
-    const digits = c.match(/\d+/);
-    return digits ? parseInt(digits[0]) : 0;
-  });
-  const mpSum = cameras.reduce((sum, mp) => sum + mp, 0);
-  const cameraFactor = mpSum * 3;
+//   // Camera factor
+//   const cameras = input.primary_camera.split("+").map(c => {
+//     const digits = c.match(/\d+/);
+//     return digits ? parseInt(digits[0]) : 0;
+//   });
+//   const mpSum = cameras.reduce((sum, mp) => sum + mp, 0);
+//   const cameraFactor = mpSum * 3;
   
-  // Display factor
-  let displayFactor = 100;
-  if (input.display.toLowerCase().includes("amoled")) {
-    displayFactor = 300;
-  } else if (input.display.toLowerCase().includes("oled")) {
-    displayFactor = 250;
-  } else if (input.display.toLowerCase().includes("lcd")) {
-    displayFactor = 150;
-  }
+//   // Display factor
+//   let displayFactor = 100;
+//   if (input.display.toLowerCase().includes("amoled")) {
+//     displayFactor = 300;
+//   } else if (input.display.toLowerCase().includes("oled")) {
+//     displayFactor = 250;
+//   } else if (input.display.toLowerCase().includes("lcd")) {
+//     displayFactor = 150;
+//   }
   
-  // Network factor
-  let networkFactor = 100;
-  if (input.network.toLowerCase().includes("5g")) {
-    networkFactor = 200;
-  }
+//   // Network factor
+//   let networkFactor = 100;
+//   if (input.network.toLowerCase().includes("5g")) {
+//     networkFactor = 200;
+//   }
   
-  // Battery factor
-  const batteryFactor = input.battery / 20;
+//   // Battery factor
+//   const batteryFactor = input.battery / 20;
   
-  // Base price (in USD)
-  const basePrice = 
-    storageFactor + 
-    ramFactor + 
-    cameraFactor + 
-    displayFactor + 
-    networkFactor + 
-    batteryFactor;
+//   // Base price (in USD)
+//   const basePrice = 
+//     storageFactor + 
+//     ramFactor + 
+//     cameraFactor + 
+//     displayFactor + 
+//     networkFactor + 
+//     batteryFactor;
   
-  // Add some variability
-  const minPrice = Math.round(basePrice * 0.9);
-  const maxPrice = Math.round(basePrice * 1.1);
+//   // Add some variability
+//   const minPrice = Math.round(basePrice * 0.9);
+//   const maxPrice = Math.round(basePrice * 1.1);
   
-  // Return price range in USD
-  return `$${minPrice} - $${maxPrice}`;
-}
+//   // Return price range in USD
+//   return `$${minPrice} - $${maxPrice}`;
+// }
 
 // Generate detailed metrics based on smartphone specs
 function generateMetrics(input: SmartphoneInput) {
