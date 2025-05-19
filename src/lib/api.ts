@@ -134,32 +134,31 @@ async function localEvaluateSmartphone(
   };
 }
 
-// Sample data for initial display
 export const sampleSmartphones: SmartphoneInput[] = [
   {
     internal_storage: 256,
     storage_ram: 8,
     expandable_storage: 1,
     primary_camera: "108MP + 12MP + 5MP + 5MP",
-    display: "Full HD+ Dynamic AMOLED 2X",
+    display: "Full HD+ Dynamic AMOLED 2X DisplayHD",
     network: "5G, 4G, 3G, 2G",
     battery: "5000 mAh"
   },
   {
     internal_storage: 64,
     storage_ram: 8,
-    expandable_storage: "NA",
+    expandable_storage: null,
     primary_camera: "50MP + 10MP + 12MP",
     display: "LCDHD",
-    network: "5G, 4G, 3G, 2G",
+    network: "4G, 3G, 2G",
     battery: "6000 mAh"
   },
   {
-    internal_storage: 128,
+    internal_storage: 100,
     storage_ram: 12,
     expandable_storage: 1,
     primary_camera: "108MP + 8MP + 2MP",
-    display: "Full HD+ Super AMOLED Plus",
+    display: "Full HD+ Super AMOLED Plus DisplayHD",
     network: "5G, 4G, 3G, 2G",
     battery: "4400 mAh"
   }
