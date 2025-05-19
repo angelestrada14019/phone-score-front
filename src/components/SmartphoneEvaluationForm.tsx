@@ -24,7 +24,7 @@ const SmartphoneEvaluationForm: React.FC<SmartphoneEvaluationFormProps> = ({
     primary_camera: "64MP + 12MP + 5MP",
     display: "Full HD+ AMOLED",
     network: "5G, 4G, 3G, 2G",
-    battery: 4500
+    battery: "4500 mAh"
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -57,7 +57,7 @@ async function localEvaluateSmartphone(
     60;
   
   // Evaluate battery
-  const batteryScore = Math.min(100, (input.battery / 6000) * 100);
+  const batteryScore = Math.min(100, (parseInt(input.battery.toString().replace(/\D/g, '')) / 6000) * 100);
 
   // Calculate overall score
   const overall_score = Math.round(
@@ -143,7 +143,7 @@ export const sampleSmartphones: SmartphoneInput[] = [
     primary_camera: "108MP + 12MP + 5MP + 5MP",
     display: "Full HD+ Dynamic AMOLED 2X",
     network: "5G, 4G, 3G, 2G",
-    battery: 5000
+    battery: "5000 mAh"
   },
   {
     internal_storage: 64,
@@ -152,7 +152,7 @@ export const sampleSmartphones: SmartphoneInput[] = [
     primary_camera: "50MP + 10MP + 12MP",
     display: "LCDHD",
     network: "5G, 4G, 3G, 2G",
-    battery: 6000
+    battery: "6000 mAh"
   },
   {
     internal_storage: 128,
@@ -161,6 +161,6 @@ export const sampleSmartphones: SmartphoneInput[] = [
     primary_camera: "108MP + 8MP + 2MP",
     display: "Full HD+ Super AMOLED Plus",
     network: "5G, 4G, 3G, 2G",
-    battery: 4400
+    battery: "4400 mAh"
   }
 ];

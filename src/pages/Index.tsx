@@ -52,6 +52,7 @@ const Index = () => {
       setEvaluatingNew(true);
       
       // Call API to evaluate the smartphone
+      data.battery = data.battery + " mAh"; // Ensure battery is a string
       const evaluation = await evaluateSmartphone(data);
       
       // Add to the list of evaluations

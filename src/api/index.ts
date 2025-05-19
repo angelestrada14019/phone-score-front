@@ -123,9 +123,10 @@ function simulateGamaModel(input: SmartphoneInput): "HIGH" | "MID" | "LOW" {
   } else {
     networkScore = 60;
   }
-  
-  // Calculate battery score
-  const batteryScore = (input.battery / 6000) * 100;
+
+    // Calcular el puntaje de batería
+    const batteryScore = (parseInt(input.battery.toString().replace(/\D/g, '')) / 6000) * 100;
+
   
   // Combined weighted score
   const combinedScore = 
@@ -236,7 +237,7 @@ function generateMetrics(input: SmartphoneInput) {
   displayScore = Math.min(100, displayScore);
   
   // Evaluate battery
-  const batteryScore = Math.min(100, (input.battery / 6000) * 100);
+  const batteryScore = Math.min(100, (parseInt(input.battery.toString().replace(/\D/g, '')) / 6000) * 100);
   
   // Calculate gaming score
   const gamingPotential = Math.round((ramScore * 0.6) + (batteryScore * 0.2) + (storageScore * 0.2));
@@ -276,7 +277,7 @@ export const sampleSmartphones: SmartphoneInput[] = [
     primary_camera: "108MP + 12MP + 5MP + 5MP",
     display: "Full HD+ Dynamic AMOLED 2X DisplayHD",
     network: "5G, 4G, 3G, 2G",
-    battery: 5000
+    battery: "5000 mAh"
   },
   {
     internal_storage: 64,
@@ -285,7 +286,7 @@ export const sampleSmartphones: SmartphoneInput[] = [
     primary_camera: "50MP + 10MP + 12MP",
     display: "LCDHD",
     network: "4G, 3G, 2G",
-    battery: 6000
+    battery: "6000 mAh"
   },
   {
     internal_storage: 100,
@@ -294,6 +295,6 @@ export const sampleSmartphones: SmartphoneInput[] = [
     primary_camera: "108MP + 8MP + 2MP",
     display: "Full HD+ Super AMOLED Plus DisplayHD",
     network: "5G, 4G, 3G, 2G",
-    battery: 4400
+    battery: "4400 mAh"
   }
 ];

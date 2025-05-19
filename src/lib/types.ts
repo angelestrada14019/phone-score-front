@@ -8,7 +8,7 @@ export interface SmartphoneInput {
   primary_camera: string; // e.g. "108MP + 12MP + 5MP + 5MP"
   display: string; // e.g. "Full HD+ Dynamic AMOLED 2X"
   network: string; // e.g. "5G, 4G, 3G, 2G"
-  battery: number; // in mAh
+  battery: string; // in mAh
 }
 
 export interface SmartphoneEvaluation extends SmartphoneInput {
